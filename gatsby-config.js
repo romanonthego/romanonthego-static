@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
+  pathPrefix: '/romanonthego-static',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -25,4 +26,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-}
+};
