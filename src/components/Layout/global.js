@@ -1,6 +1,6 @@
-import {injectGlobal} from 'styled-components'
-import reset from 'styled-reset'
-import font from './fonts/overpass-mono.woff2'
+import { injectGlobal } from 'styled-components';
+import reset from 'styled-reset';
+import font from './fonts/overpass-mono.woff2';
 
 injectGlobal`
   ${reset}
@@ -10,6 +10,7 @@ injectGlobal`
     font-weight: 300;
     font-style: 'normal';
     src: local('Overpass Mono'), local('Overpass-Mono'), url(${font}) format("woff2");
+    font-display: swap;
   }
 
   *, *:before, *:after {
@@ -70,4 +71,4 @@ injectGlobal`
       cursor: not-allowed;
     }
   }
-`
+`;
