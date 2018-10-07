@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components';
-import reset from 'styled-reset';
-import font from './fonts/overpass-mono.woff2';
+import {injectGlobal} from 'styled-components'
+import reset from 'styled-reset'
+import font from './fonts/overpass-mono.woff2'
 
 injectGlobal`
   ${reset}
@@ -17,10 +17,6 @@ injectGlobal`
     box-sizing: border-box;
     font-weight: normal;
     font-style: normal;
-    font-family: 'Overpass Mono', 'Courier New', Courier, monospace;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
   }
   
   body {
@@ -32,6 +28,14 @@ injectGlobal`
 
     @media (-webkit-min-device-pixel-ratio: 2) {
       text-shadow: 0.5px 0 0 red, -0.5px 0 0 cyan;
+    }
+
+    ::selection {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    ::-moz-selection {
+      background-color: rgba(0, 0, 0, 0.6);
     }
   }
 
@@ -65,10 +69,12 @@ injectGlobal`
     background-color: white;
     color: #12151E;
     padding: 10px 5px;
+    font-size: 16px;
+    line-height: 20px;
 
     &:disabled {
       opacity: 0.6;
       cursor: not-allowed;
     }
   }
-`;
+`
